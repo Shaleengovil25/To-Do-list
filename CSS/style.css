@@ -1,1 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: linear-gradient(45deg, red, blue);
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+input{
+    width: 70%;
+    margin-right: 0;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.addBtn{
+    width: 30%;
+    margin-left: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    background: gold;
+    color: red;
+    transition: 0.3s;
+}
+
+.addBtn:hover{
+    background: #fccd12;
+    color: #a12c21;
+}
+
+
+ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 10px 12px 40px;
+    width: 70%;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: none;
+    background: rgba(228, 187, 134, 0.911);
+    transition: 0.2s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd){
+    background: lightsalmon;
+}
+
+ul li:hover{
+    background: #ddd;
+}
+
+ul li.checked{
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    content: "";
+    position: absolute;
+    border-color: green;
+    border-style: solid;
+    border-width: 0 3px 3px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.far{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    transition: 0.2s;
+}
+
+.far:hover{
+    background-color: gold;
+    color: red;
+}
